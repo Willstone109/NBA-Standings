@@ -1,0 +1,15 @@
+h1{
+  text-align: center;
+}
+table{
+  width: 100%;
+  border: .2em ridge #000;
+}
+th{
+  background-color: #20EF43;
+}
+td{
+  width: 25%;
+  background-color: #3B9FD8;
+  border: .2em ridge #0f0f0f
+}

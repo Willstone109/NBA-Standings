@@ -1,0 +1,22 @@
+<h1>East Teams</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>City</th>
+    <th>Nickname</th>
+    <th>Conference</th>
+    <th>Wins</th>
+    <th>Losses</th>
+  </tr>
+  <% @east.each do |team| %>
+<tr>
+
+  <td><%= team.id %></td>
+  <td><%= team.city %></td>
+  <td><%= team.nickname %></td>
+  <td><%= team.conference %></td>
+  <td><%= team.wins %></td>
+  <td><%= team.losses %></td>
+</tr>
+  <% end %>
+</table>

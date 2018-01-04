@@ -1,0 +1,22 @@
+<h1>NBA Teams</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>City</th>
+    <th>Nickname</th>
+    <th>Conference</th>
+    <th>Wins</th>
+    <th>Losses</th>
+  </tr>
+  <% @nba.each do |team| %>
+<tr>
+  <td> <%= team.id %> </td>
+  <td> <%= link_to team.nickname, "http://www.nba.com/teams/#{team.nickname.downcase}" %> <%= team.city %></td>
+  <td><%= team.nickname %></td>
+  <td><%= team.conference %></td>
+  <td><%= team.wins %></td>
+  <td><%= team.losses %></td>
+</tr>
+  <% end %>
+</table>
